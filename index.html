@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Monthly bucks</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>How broke am I?</h1>
+	<div class="enter">
+		<p class="subhead">Budget</p>
+		<input type="text" name="budget" placeholder="Enter budget" class="textbox">
+		<p class="subhead">Monthly Costs</p>
+		<input type="text" name="rent" placeholder="rent" class="textbox">
+		<input type="text" name="utilities" placeholder="utilities" class="textbox">
+		<p class="subhead">Savings Priority</p>
+		<input type="radio" name="save">High
+		<input type="radio" name="save">Medium
+		<input type="radio" name="save">Low
+	</div>
+	<div class="purchase">
+		<p class="subhead">New Purchase</p>
+		<input type="text" name="item" placeholder="description" class="textbox">
+		<input type="text" name="price" placeholder="price" class="textbox">
+	</div>
+	<div class="enter" id="result">
+		<p class="subhead">Outcome:</p>
+		<p id="canyou"></p>
+		<p id="shouldyou"></p>
+		<p id="money"></p>
+	</div>
+	<button>Compute</button>
+	<script src="script.js"></script>
+</body>
+</html>
