@@ -1,6 +1,6 @@
 body {
 	text-align: center;
-	font-family: "Courier-New";
+	font-family: "Courier New", Courier, monospace;
 	color: #040275;
 }
 
@@ -9,21 +9,23 @@ h1 {
 }
 
 .enter {
-	border: solid gray;
+	border: solid dimGray 2px;
 	border-radius: 10px;
 	background-color: #e2c9ff;
 	padding: 10px;
 	margin: 5px;
 	text-align: left;
+	display: inline-block;
 }
 
 .purchase {
-	border: solid gray;
+	border: solid dimGray 2px;
 	border-radius: 10px;
 	background-color: #ffc8b0;
 	padding: 10px;
 	margin: 5px;
 	text-align: left;
+	display: inline-block;
 }
 
 .subhead {
@@ -40,9 +42,15 @@ input {
 	padding: 5px;
 }
 
+.result {
+	margin-left: 10px;
+	font-size: 15px;
+}
+
 button {
-	border: solid gray;
+	border: solid dimGray 2px;
 	background-color: blue;
+	border-radius: 20px;
 	color: white;
 	padding: 10px;
 	margin: 10px;

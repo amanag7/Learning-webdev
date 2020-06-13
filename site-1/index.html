@@ -17,17 +17,20 @@
 		<input type="radio" name="save">Medium
 		<input type="radio" name="save">Low
 	</div>
+	<br>
 	<div class="purchase">
 		<p class="subhead">New Purchase</p>
 		<input type="text" name="item" placeholder="description" class="textbox">
 		<input type="text" name="price" placeholder="price" class="textbox">
 	</div>
+	<br>
 	<div class="enter" id="result">
 		<p class="subhead">Outcome:</p>
-		<p id="canyou"></p>
-		<p id="shouldyou"></p>
-		<p id="money"></p>
+		<p id="canyou" class="result"></p>
+		<p id="shouldyou" class="result"></p>
+		<p id="money" class="result"></p>
 	</div>
+	<br>
 	<button onclick="calcbudget();">Compute</button>
 	<script src="script.js"></script>
 </body>
