@@ -8,20 +8,20 @@
 	<h1>How broke am I?</h1>
 	<div class="enter">
 		<p class="subhead">Budget</p>
-		<input type="text" name="budget" placeholder="Enter budget" class="textbox">
+		<input type="number" id="budget" placeholder="Enter budget" class="textbox">
 		<p class="subhead">Monthly Costs</p>
-		<input type="text" name="rent" placeholder="rent" class="textbox">
-		<input type="text" name="utilities" placeholder="utilities" class="textbox">
+		<input type="number" id="rent" placeholder="rent" class="textbox">
+		<input type="number" id="utilities" placeholder="utilities" class="textbox">
 		<p class="subhead">Savings Priority</p>
-		<input type="radio" name="save">High
-		<input type="radio" name="save">Medium
-		<input type="radio" name="save">Low
+		<input type="radio" name="save" value="high" id="high">High
+		<input type="radio" name="save" value="medium" id="medium">Medium
+		<input type="radio" name="save" value="low" id="low">Low
 	</div>
 	<br>
 	<div class="purchase">
 		<p class="subhead">New Purchase</p>
-		<input type="text" name="item" placeholder="description" class="textbox">
-		<input type="text" name="price" placeholder="price" class="textbox">
+		<input type="text" id="item" placeholder="description" class="textbox">
+		<input type="number" id="price" placeholder="price" class="textbox">
 	</div>
 	<br>
 	<div class="enter" id="result">
@@ -32,6 +32,7 @@
 	</div>
 	<br>
 	<button onclick="calcbudget();">Compute</button>
+	<button onclick="reset();">Reset</button>
 	<script src="script.js"></script>
 </body>
 </html>
